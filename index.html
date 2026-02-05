@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Sono:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Anzy's 3D Room</title>
+</head>
+
+<body>
+    <!--Three.js canvas-->
+    <div class="portfolio">
+        <canvas id="portfolio-canvas"></canvas>
+    </div>
+
+    <!--Loading screen-->
+    <div id="loading" class="loading">
+        <h2>Chalu hone wala hai...</h2>
+        <p>Thoda sa wait karlo</p>
+    </div>
+
+    <!--Welcome message - hidden by default -->
+    <div id="welcome" class="welcome hidden">
+        <div class="welcome-content">
+            <button id="welcome-exit-button" class="popup-close">&times;</button>
+            <div class="popup-body">
+                <h2>Hello there,</h2>
+                <p>Welcome to Anzy's digital office! Stay for as long as you'd like :)</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio Popup-->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <button id="popup-exit-button" class="popup-close">&times;</button>
+            <div class="popup-body">
+                <!-- About Me Section -->
+                <section class="portfolio-section" id="about-me">
+                    <h2>About Me</h2>
+                    <div class="about-me-content">
+                        <div class="personal-info">
+                            <p><strong>Username:</strong>Anzy</p>
+                            <p><strong>Age:</strong> 20</p>
+                            <p><strong>Nationality:</strong> Indian</p>
+                            <p>I'm a 19 year old developer from India. I really enjoy making projects using AI
+                                and tools like Antigravity. I really hope that, one day, I can make this
+                                project by myself.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="portfolio-section" id="skills">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-content">
+                        <div class="skill-category">
+                            <h3>AI Tools</h3>
+                            <ul>
+                                <li>Canva</li>
+                                <li>Figma</li>
+                                <li>Antigravity</li>
+                                <li>Cursor</li>
+                                <li>ChatGPT</li>
+                                <li>Claude</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>APIs, libraries and frameworks</h3>
+                            <ul>
+                                <li>Every API listed in Claude</li>
+                                <li>Every lib listed in Claude</li>
+                                <li>Every framework listed in Claude</li>
+                                <li>Every SDk listed in Claude</li>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Software and tools</h3>
+                            <ul>
+                                <li>Unity</li>
+                                <li>Git/Github</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Work Experience Section -->
+                <section class="portfolio-section" id="work-experience">
+                    <h2>Work Experience</h2>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <h3>Owner</h3>
+                            <p><strong>[Vizgen]</strong> | Jan 2024 - Present</p>
+                            <ul>
+                                <li>Worked on Capcut & After Effects and made custom edits & videos.</li>
+                                <li>Throught I've made 50+ high quality videos. These videos gained
+                                    a lot popularity over the internet.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section class="portfolio-section" id="education">
+                    <h2>Education</h2>
+                    <div class="education-list">
+                        <div class="education-item">
+                            <h3>Bachelor's degree in Technology</h3>
+                            <p><strong>Newton School Of Technology</strong> | 2025 - 2029</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section class="portfolio-section" id="projects">
+                    <h2>Projects</h2>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./public/portfolio.png" alt="Project 1">
+                            </div>
+                            <div class="project-details">
+                                <h3>Interactive 3D Portfolio</h3>
+                                <p>A 3D web portfolio built using Artificial Intelligence.</p>
+                                <div class="project-links">
+                                    <a href="https://anzydev.github.io/ai_portfolio/" target="_blank">View
+                                        Project</a>
+                                    <a href="https://github.com/anzydev/ai_portfolio" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./public/pass.png" alt="Project 2">
+                            </div>
+                            <div class="project-details">
+                                <h3>Password Generator</h3>
+                                <p>A Website built to test the strength of your passowrd.</p>
+                                <div class="project-links">
+                                    <a href="https://passwordgenerator-woad-theta.vercel.app/" target="_blank">View
+                                        Project</a>
+                                    <a href="https://github.com/anzydev/passwordgenerator" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section class="portfolio-section" id="contact">
+                    <h2>Contact Me</h2>
+                    <div class="contact-links">
+                        <div class="contact-item">
+                            <strong>Twitter:</strong>
+                            <a href="https://x.com/KhushagraR" target="_blank">@KhushagraR</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            khushagrarawal95@gmail.com
+                        </div>
+                        <div class="contact-item">
+                            <strong>GitHub:</strong>
+                            <a href="https://github.com/anzydev" target="_blank">anzydev</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!--Import Three.js-->
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@v0.149.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.149.0/examples/jsm/"
+          }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <!--Main Script-->
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
